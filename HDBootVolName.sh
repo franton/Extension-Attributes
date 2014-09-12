@@ -2,7 +2,7 @@
 
 # Script to find the name of the current boot volume
 
-# Author  : r.purves@arts.ac.uk
+# Author  : contact@richard-purves.com
 # Version : 1.0 - Initial Version
 # Version : 1.0 - Changed from reporting only to fixing
 
