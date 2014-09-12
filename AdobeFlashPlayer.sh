@@ -2,7 +2,7 @@
 
 # Script to find if Adobe Flash Player is installed and report it's version number to an extension attribute.
 
-# Author : r.purves@arts.ac.uk
+# Author : contact@richard-purves.com
 # Version 1.0 : 14-12-2012 - Initial Version
 
 # Use default read to get the version number from the expected location.
