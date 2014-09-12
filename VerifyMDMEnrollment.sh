@@ -3,7 +3,7 @@
 # Script to check if the Casper MDM profile has been installed.
 # This is needed to make sure that our computers are able to receive configuration profiles.
 
-# Author : r.purves@arts.ac.uk
+# Author : contact@richard-purves.com
 # Version: 1.0 - Inital Version
 
 mdmEnrollmentProfileID="00000000-0000-0000-A000-4A414D460003"
