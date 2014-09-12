@@ -5,7 +5,7 @@
 
 # Script based on http://derflounder.wordpress.com/2012/10/31/casper-extension-attribute-scripts-to-report-java-browser-plug-in-info/
 
-# Implementation : r.purves@arts.ac.uk
+# Implementation : contact@richard-purves.com
 # Version 1.0	 : 28-02-2013 - Initial Version
 
 # Set variables up here
