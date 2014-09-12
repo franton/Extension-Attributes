@@ -4,11 +4,11 @@
 
 # Lovingly stolen from https://jamfnation.jamfsoftware.com/discussion.html?id=6520
 
-groupmember=`dscl /Local/Default read /Groups/admin GroupMembership | tr ' ' '\n' | grep -Ev 'root|uadmin|UAdmin|GroupMembership:|admin' | tr '\n' ' '`
+groupmember=`dscl /Local/Default read /Groups/admin GroupMembership | tr ' ' '\n' | grep -Ev 'root|admin|GroupMembership:|admin' | tr '\n' ' '`
 
 if [ "$groupmember" == "" ] ;
 then
-  echo "<result>Default uadmin account</result>"
+  echo "<result>Default admin account</result>"
 else
   echo "<result>$groupmember</result>"
 fi
