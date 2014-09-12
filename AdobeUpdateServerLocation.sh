@@ -2,7 +2,7 @@
 
 # Report the address of the configured Adobe Update Server for CS/CC.
 
-# Author: r.purves@arts.ac.uk
+# Author: contact@richard-purves.com
 
 updaterConfigFile="/Library/Application Support/Adobe/AAMUpdater/1.0/AdobeUpdater.Overrides"
 
