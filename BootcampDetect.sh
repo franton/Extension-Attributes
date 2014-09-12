@@ -3,7 +3,7 @@
 # Script to detect if a Bootcamp partition is present
 # Returns "Present" or "Not Present" for clarity.
 
-# Implemented : r.purves@arts.ac.uk
+# Implemented : contact@richard-purves.com
 # Version 1.0 : 18-12-2012 - Initial Version
 
 # Shamelessly stolen from http://derflounder.wordpress.com/2012/12/17/detecting-boot-camp-partitions-with-casper/
