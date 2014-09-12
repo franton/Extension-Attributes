@@ -3,7 +3,7 @@
 # Script to read MDM profile address into an Extension Attribute
 # This is needed to make sure that our computers are pointing to the correct URL
 
-# Author : r.purves@arts.ac.uk
+# Author : contact@richard-purves.com
 # Version: 1.0 - Inital Version
 
 # Read the current computer profile and grep for the organisation name
