@@ -3,7 +3,7 @@
 # Script to check Gatekeeper status on a mac and report via Extension Attribute
 # Lovingly stolen and modified from http://derflounder.wordpress.com/2012/09/20/gatekeeper-status-check-script/
 
-# Implemented : r.purves@arts.ac.uk
+# Implemented : contact@richard-purves.com
 # Version : 1.0 - Initial Version
 
 # Check for current OS version. We're only looking at 10.8 right now.
