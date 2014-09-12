@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Detects all local accounts on a system that aren't uadmin
+# Detects all local accounts on a system that aren't admin
 
-# Author      : r.purves@arts.ac.uk
+# Author      : contact@richard-purves.com
 
 # Version 1.0 : 27-01-2014 - Initial Version
 
@@ -22,7 +22,7 @@ do
 
 # Local uadmin account is to be excluded from this list
 
-	if [[ ${accounts[$a]} != "uadmin" ]];
+	if [[ ${accounts[$a]} != "admin" ]];
 	then
 		
 # Get UniqueID of current user in list
