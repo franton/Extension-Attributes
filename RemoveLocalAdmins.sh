@@ -19,7 +19,7 @@ UserList=$( echo $UserList | awk '$2 <= 1000 {print $1}' )
 
 if [ $UserList = "" ];
 then
-	echo "No local accounts found. Exiting"
+	echo "<result>No local admin accounts<result>"
 	exit 0
 fi
 
@@ -28,6 +28,5 @@ fi
 
 for Account in "$UserList"
 do
-	echo "ERROR: Removing admin rights from local account: $Account"
 	/usr/sbin/dseditgroup -o edit -d $Account -t user admin
 done
