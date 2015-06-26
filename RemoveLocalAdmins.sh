@@ -19,7 +19,7 @@ UserList=$( echo $UserList | awk '$2 <= 1000 {print $1}' )
 
 if [ $UserList = "" ];
 then
-	echo "<result>No local admin accounts<result>"
+	echo "<result>No local accounts<result>"
 	exit 0
 fi
 
@@ -29,4 +29,7 @@ fi
 for Account in "$UserList"
 do
 	/usr/sbin/dseditgroup -o edit -d $Account -t user admin
+	LocalAct="$LocalAct $Account"
 done
+
+echo "<result>Local accounts : $LocalAct<result>"
