@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# Script to determine the JSS address on a target mac
-
-# Author : contact@richard-purves.com
-# Version 1.0 : 21-2-2013 - Initial Version.
+# EA to determine the JSS address on a target mac
 
 result=$( defaults read /Library/Preferences/com.jamfsoftware.jamf.plist jss_url )
 
