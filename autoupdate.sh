@@ -1,12 +1,15 @@
-#!/bin/bash
+#!/usr/bin/python
 
 # EA to check for auto update setting
 
-check=$( defaults read /Library/Preferences/com.apple.SoftwareUpdate AutomaticCheckEnabled )
+import CoreFoundation
 
-if [ $check = "1" ];
-then
-	echo "<result>Enabled</false>"
-else
-	echo "<result>Disabled</false>"
-fi
+domain = 'com.apple.SoftwareUpdate'
+key = 'AutomaticCheckEnabled'
+
+key_value = CoreFoundation.CFPreferencesCopyAppValue(key, domain)
+
+if key_value == 1:
+    print "<result>Enabled</result>"
+else:
+    print "<result>Disabled</result>" 
