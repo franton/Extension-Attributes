@@ -12,7 +12,7 @@ do
 
 	if [[ ${accounts[$a]} != "admin" ]];
 	then
-		AccountUID=($( dscl . -read /Users/${accounts[$a]} | grep UniqueID | awk '{print $2}' )
+		AccountUID=($( dscl . -read /Users/${accounts[$a]} | grep UniqueID | awk '{print $2}' ))
 		if [[ $AccountUID -gt 500 ]] && [[ $AccountUID -lt 1000 ]];
 		then
 			report=$report${accounts[$a]}" "
