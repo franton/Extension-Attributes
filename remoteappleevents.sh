@@ -4,7 +4,7 @@
 
 check=$( systemsetup -getremoteappleevents )
 
-if [ $check = "Remote Apple Events: Off" ];
+if [ "$check" = "Remote Apple Events: Off" ];
 then
 	echo "<result>Disabled</false>"
 else
