@@ -4,7 +4,7 @@
 
 check=$( defaults read /Library/Preferences/com.apple.loginwindow.plist | grep autoLoginUser' )
 
-if [ $check != "" ];
+if [ "$check" != "" ];
 then
 	echo "<result>Enabled</false>"
 else
