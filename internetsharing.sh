@@ -4,7 +4,7 @@
 
 check=$( /usr/libexec/PlistBuddy -c "print :NAT:Enabled:" /Library/Preferences/SystemConfiguration/com.apple.nat.plist )
 
-if [ $check = "1" ];
+if [ "$check" = "1" ];
 then
 	echo "<result>Enabled</false>"
 else
