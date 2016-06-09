@@ -4,7 +4,7 @@
 
 check=$( systemsetup -getremotelogin )
 
-if [ $check = "Remote Login: Off" ];
+if [ "$check" = "Remote Login: Off" ];
 then
 	echo "<result>Disabled</false>"
 else
