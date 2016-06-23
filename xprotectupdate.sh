@@ -2,6 +2,8 @@
 
 # EA to determine the last xprotect update
 
-XPROTECT=`ls -l /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/XProtect.meta.plist | awk '{print $6,$7,$8}'`
+date=$( ls -lT /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/XProtect.meta.plist | awk '{ print $6,$7,$8,$9 }' )
 
-echo "<result>$XPROTECT</result>"
+format=$( date -j -f "%d %b %H:%M:%S %Y" "$date" +"%Y-%m-%d %T" )
+
+echo "<result>$format</result>"
