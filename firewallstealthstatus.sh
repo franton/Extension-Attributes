@@ -6,7 +6,7 @@ check=$( /usr/libexec/ApplicationFirewall/socketfilterfw --getstealthmode )
 
 if [ "$check" = "Stealth mode enabled" ];
 then
-	echo "<result>Enabled</false>"
+	echo "<result>Enabled</result>"
 else
-	echo "<result>Disabled</false>"
+	echo "<result>Disabled</result>"
 fi
