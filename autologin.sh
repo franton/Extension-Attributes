@@ -6,7 +6,7 @@ check=$( defaults read /Library/Preferences/com.apple.loginwindow.plist | grep a
 
 if [ "$check" != "" ];
 then
-	echo "<result>Enabled</false>"
+	echo "<result>Enabled</result>"
 else
-	echo "<result>Disabled</false>"
+	echo "<result>Disabled</result>"
 fi
