@@ -5,9 +5,9 @@
 check=$( /usr/sbin/firmwarepasswd -mode )
 
 if [ "$check" = "Mode: none" ]; then
-	echo "<result>Disabled</false>"
+	echo "<result>Disabled</result>"
 elif [ "$check" = "Mode: command" ]; then
-	echo "<result>Command</false>"
+	echo "<result>Command</result>"
 elif [ "$check" = "Mode: full" ]; then
-  echo "<result>Full</false>"
+  echo "<result>Full</result>"
 fi
