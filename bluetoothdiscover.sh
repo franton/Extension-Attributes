@@ -4,4 +4,9 @@
 
 check=$( system_profiler SPBluetoothDataType | grep -i discoverable | awk '{ print $1 $2 }' )
 
-echo "<result>$check</result>"
+if [ "$check" = "" ];
+then
+    echo "<result>Missing Bluetooth Device</result>"
+else
+    echo "<result>$check</result>"
+fi
