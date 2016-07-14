@@ -6,7 +6,7 @@ check=$( launchctl list | grep AppleFileServer | awk '{ print $3 }' )
 
 if [ "$check" = "com.apple.AppleFileServer" ];
 then
-	echo "<result>Enabled</false>"
+	echo "<result>Enabled</result>"
 else
-	echo "<result>Disabled</false>"
+	echo "<result>Disabled</result>"
 fi
