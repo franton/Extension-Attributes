@@ -6,7 +6,7 @@ check=$( launchctl list | grep nfs | awk '{ print $3 }' )
 
 if [ "$check" = "com.apple.nfsd" ];
 then
-	echo "<result>Enabled</false>"
+	echo "<result>Enabled</result>"
 else
-	echo "<result>Disabled</false>"
+	echo "<result>Disabled</result>"
 fi
