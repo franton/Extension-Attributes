@@ -6,7 +6,7 @@ check=$( /usr/libexec/PlistBuddy -c "print :NAT:Enabled:" /Library/Preferences/S
 
 if [ "$check" = "1" ];
 then
-	echo "<result>Enabled</false>"
+	echo "<result>Enabled</result>"
 else
-	echo "<result>Disabled</false>"
+	echo "<result>Disabled</result>"
 fi
