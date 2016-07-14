@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# EA to check for Remote Login status
+# EA to check for remote login status
 
 check=$( systemsetup -getremotelogin )
 
-if [ "$check" = "Remote Login: Off" ];
+if [ "$check" = "Remote Login: On" ];
 then
-	echo "<result>Disabled</false>"
+	echo "<result>Enabled</result>"
 else
-	echo "<result>Enabled</false>"
+	echo "<result>Disabled</result>"
 fi
