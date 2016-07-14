@@ -6,7 +6,7 @@ check=$( pgrep -o -l httpd | awk '{ print $2 }' )
 
 if [ "$check" = "httpd" ];
 then
-	echo "<result>Enabled</false>"
+	echo "<result>Enabled</result>"
 else
-	echo "<result>Disabled</false>"
+	echo "<result>Disabled</result>"
 fi
