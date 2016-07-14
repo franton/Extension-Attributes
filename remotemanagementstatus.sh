@@ -6,7 +6,7 @@ check=$( pgrep -l ARDAgent | awk '{ print $2 }' )
 
 if [ "$check" = "ARDAgent" ];
 then
-	echo "<result>Enabled</false>"
+	echo "<result>Enabled</result>"
 else
-	echo "<result>Disabled</false>"
+	echo "<result>Disabled</result>"
 fi
